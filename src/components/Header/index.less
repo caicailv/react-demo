@@ -1,0 +1,30 @@
+.header {
+    @h: 60px;
+    .top {
+        display: flex;
+        justify-content: flex-end;
+        height: @h;
+        line-height: @h;
+        padding: 0 @h/2;
+        border-bottom: 1px solid #eee;
+
+        .back {
+            margin-left: 20px;
+        }
+    }
+
+    .bot {
+        display: flex;
+        justify-content: space-between;
+        height: @h;
+        line-height: @h;
+        padding: 0 @h/2;
+        border-bottom: 1px solid #eee;
+        .right{
+            img{
+                margin: 0 20px;
+                height: 20px;
+            }
+        }
+    }
+}
