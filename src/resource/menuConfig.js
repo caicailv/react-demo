@@ -118,8 +118,16 @@ const menuList = [
         ]
     },
     {
-        title:'权限设置',
-        key:'/permission'
+        title:'home',
+        key:'/home'
+    },
+    {
+        title:'index',
+        key:'/index'
+    },
+    {
+        title:'shop',
+        key:'/shop'
     },
 ];
 export default menuList;
