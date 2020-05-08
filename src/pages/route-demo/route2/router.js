@@ -4,7 +4,7 @@ import Home from './Home';
 export default class Irouter extends React.Component {
     render() {
         <HashRouter>
-
+a
         </HashRouter>
     }
 }
