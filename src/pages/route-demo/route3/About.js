@@ -1,10 +1,9 @@
 import React from 'react';
 export default class About extends React.Component {
     render() {
-        return <div>
-            About
-            <hr/>
-            {this.props.children}
+        return <div>about
+            <br/>
+            {JSON.stringify(this.props)}
         </div>
     }
 }

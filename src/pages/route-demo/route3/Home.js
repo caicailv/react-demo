@@ -8,13 +8,16 @@ export default class Home extends React.Component {
         return <HashRouter>
             <ul>
                 <li>
+                    <Link to="/main">main</Link>
+                </li>
+                <li>
                     <Link to="/about">about</Link>
                 </li>
                 <li>
                     <Link to="/topic">topic</Link>
                 </li>
                 <hr></hr>
-                {this.props.children}   
+                {this.props.children}
             </ul>
         </HashRouter>
     }

@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { Menu } from 'antd';
-import { HashRouter, Link } from 'react-router-dom'
+import { HashRouter, NavLink } from 'react-router-dom'
 import menuList from '../../resource/menuConfig'
 import './index.less'
-import { from } from 'rxjs';
-
 const { SubMenu } = Menu;
 export default class NavLeft extends Component {
     componentWillMount() {
@@ -23,9 +21,9 @@ export default class NavLeft extends Component {
 
             return (
                 <Menu.Item key={item.key}>
-                    <Link to={item.key}>
+                    <NavLink to={item.key}>
                         {item.title}
-                    </Link>
+                    </NavLink>
                 </Menu.Item>
             )
         })

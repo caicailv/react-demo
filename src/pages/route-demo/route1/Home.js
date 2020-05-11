@@ -18,12 +18,16 @@ export default class Index extends React.Component {
                 </div>
                 <div>
                     <Switch>
-          
-                        <Route path="/about" component={About}></Route>
+
+                        <Route path="/about" render={() => {
+                            return <About>
+                                <Route path="/about" component={Topic}> </Route>
+                            </About>
+                        }}></Route>
                         <Route path="/topic" component={Topic}></Route>
-                        <Route path="/" render={()=>{
+                        <Route path="/" render={() => {
                             return <div>da</div>
-                        }}></Route> 
+                        }}></Route>
                     </Switch>
 
                 </div>

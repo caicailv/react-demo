@@ -6,7 +6,7 @@ import NavLeft from '../components/NavLeft'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Content from '../components/Content';
-export default class Admin extends React.Component {
+export default class App extends React.Component {
     render() {
         return <Row className="container">
             <Col span="3" className="nav-left">
@@ -17,6 +17,6 @@ export default class Admin extends React.Component {
                 <Content></Content>
                 <Footer></Footer>
             </Col>
-        </Row>
+        </Row> 
     }
 }
